@@ -556,7 +556,7 @@ img {
     justify-content: center;
 }
 /* ------------------------------CARDS---------------------- */
-.card-list{
+.card-list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -582,15 +582,17 @@ img {
     color: var(--white-page-color);
     background-color: rgba(33, 150, 243, 0.9);
 }
-.card-item{
+.card-item {
     margin: 15px;
     width: calc(100% / 3 - 30px);
 }
-.card-item:hover .action-thumb-text {
+.card-item:hover .action-thumb-text,
+.card-item:focus .action-thumb-text {
     transform: translateY(0);
     opacity: 1;
 }
-.card-item:hover {
+.card-item:hover,
+.card-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .pre-img-text{
